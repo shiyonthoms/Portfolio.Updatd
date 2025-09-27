@@ -13,33 +13,47 @@ const skills = [
 ];
 
 const Sidebar = () => (
-  <div className="w-full h-[80%] flex flex-col gap-6 ">
+  <div className="w-full h-[80%] flex flex-col gap-6 pb-5">
+    {/* Socials */}
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30">
       <h2 className="text-white font-bold text-xl mb-4">Socials</h2>
       <div className="flex flex-col gap-3">
         {socialLinks.map((social) => (
-          <div key={social.name} className="flex items-center p-2 rounded-lg bg-gray-700/40">
-            <a
-              href={social.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-9 h-9 rounded-full flex justify-center items-center text-white hover:ring-green-300 ring-2 ring-transparent hover:scale-110 transition duration-300"
-            >
-              <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox={social.viewBox} height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+          <a
+            key={social.name}
+            href={social.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center p-2 rounded-2xl bg-gray-700/40 hover:bg-gray-200/40 transition duration-300"
+          >
+            <div className="w-9 h-9 rounded-full flex justify-center items-center text-white hover:ring-green-300 ring-2 ring-transparent hover:scale-110 transition duration-300">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth="0"
+                viewBox={social.viewBox}
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <path d={social.iconPath}></path>
               </svg>
-            </a>
+            </div>
             <span className="pl-3 text-white">{social.name}</span>
-          </div>
+          </a>
         ))}
       </div>
     </div>
 
+    {/* Skills */}
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30">
-      <h2 className="text-white font-bold text-xl mb-4">Skills</h2>
+      <h2 className="text-white font-bold text-xl pb-13">Skills</h2>
       <div className="grid grid-cols-4 gap-4 text-white">
         {skills.map((skillClass, index) => (
-          <div key={index} className="w-14 h-14 flex items-center justify-center rounded-full bg-gray-700/40">
+          <div
+            key={index}
+            className="w-14 h-14 flex items-center justify-center rounded-full bg-gray-700/40"
+          >
             <i className={`${skillClass} text-2xl`}></i>
           </div>
         ))}
@@ -47,5 +61,6 @@ const Sidebar = () => (
     </div>
   </div>
 );
+
 
 export default Sidebar;
