@@ -11,7 +11,7 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
   return (
     <nav className="w-full flex items-center h-[72px] justify-between">
       {/* Left Side: Name/Logo */}
-      <div className="text-white font-bold text-2xl rounded-3xl px-4 py-2 bg-gray-700/40 hover:bg-gray-900/30 cursor-pointer ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2">
+      <div className="text-white font-bold text-2xl rounded-3xl px-4 py-2 bg-gray-700/40  ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2">
         Shiyon Thomas
       </div>
 

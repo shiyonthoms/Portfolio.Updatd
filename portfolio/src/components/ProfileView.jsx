@@ -55,8 +55,9 @@ const ProfileView = ({ getDownloadFile }) => {
         <div className="w-full lg:w-1/3 backdrop-blur-lg rounded-2xl flex flex-col items-center justify-center gap-4 p-6 bg-gray-800/30 hover:scale-102 transition duration-500">
           <h3 className="text-white font-bold text-lg">Connect with me</h3>
           <div className="flex flex-wrap gap-4 justify-center">
-            <a href="https://www.linkedin.com/in/shiyonthomas/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition text-sm">LinkedIn</a>
-            <a href="mailto:shiyon@example.com" className="text-white hover:text-red-500 transition text-sm">Email</a>
+            <a href="https://www.linkedin.com/in/shiyonthomas/" target="_blank" rel="noopener noreferrer" className="text-white transition text-sm">
+            <i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+            <a href="mailto:shiyonthomas@icloud.com" target="_blank" className="text-white transition text-sm"><i class="fa-solid fa-envelope"></i>Email</a>
           </div>
         </div>
       </div>
