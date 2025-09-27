@@ -13,7 +13,7 @@ const Main = ({ currentRoute }) => {
     <section className="w-full h-full flex items-center justify-center overflow-auto">
       <div className="w-full h-full flex">
         {/* Sidebar */}
-        <div className="hidden md:flex min-w-[300px] w-[20%]  h-full"></div>
+        <div className="hidden md:flex min-w-[300px] w-[20%] h-full"></div>
 
         {/* Main Panel */}
         <div className="flex-1 h-full flex flex-col items-center">
@@ -21,9 +21,9 @@ const Main = ({ currentRoute }) => {
             <>
               {/* Your existing Profile Page JSX */}
               {/* Top card */}
-              <div className="backdrop-blur-lg w-[95%] h-full lg:h-[70%] rounded-2xl mt-2 flex flex-col lg:flex-row items-center">
+              <div className="backdrop-blur-lg w-[95%] h-full lg:h-[70%] rounded-2xl flex flex-col lg:flex-row items-center pt-2">
                 {/* Text */}
-                <div className="w-full lg:w-1/2 flex flex-col items-center justify-center space-y-6 order-1 md:order-2 mt-5 lg:mt-0">
+                <div className="w-full lg:w-1/2 flex flex-col items-center justify-center space-y-6 order-1 md:order-2 mt-2 lg:mt-0 pb-5">
                   <h1 className="text-4xl font-bold text-white">Hello I'm</h1>
                   <h1 className="text-4xl font-bold text-white">Shiyon Thomas</h1>
                   <h1 className="text-xl font-bold text-white">IT Specialist & Full-Stack Developer</h1>
@@ -36,9 +36,9 @@ const Main = ({ currentRoute }) => {
                 </div>
 
                 {/* Picture */}
-                <div className="w-full lg:w-1/2 flex items-center justify-center">
+                <div className="w-full lg:w-1/2 flex items-center justify-center ">
                   <img
-                    className="w-80 h-80 rounded-full object-cover"
+                    className="w-60 h-60 sm:w-80 sm:h-80 rounded-full object-cover "
                     src="/pic.jpg"
                     alt="Profile Picture"
                   />
@@ -72,12 +72,6 @@ const Main = ({ currentRoute }) => {
                       Email
                     </a>
                   </div>
-                  <button
-                    onClick={getDownloadFile}
-                    className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold transition"
-                  >
-                    Download CV
-                  </button>
                 </div>
               </div>
             </>
