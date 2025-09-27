@@ -19,6 +19,12 @@ const ProfileView = ({ getDownloadFile }) => {
           >
             <span>Download CV</span>
           </button>
+          <div className='w-full rounded-2xl justify-center gap-6 flex flex-row'>
+            <div className='backdrop-blur-lg w-30 h-15 rounded-2xl items-center'><span className='text-lg font-semibold'>Age</span><br /><span className='font-bold text-md'>26</span></div> 
+           <div className='backdrop-blur-lg w-30 h-15 rounded-2xl items-center'><span className='text-lg font-semibold'>Yoe</span><br /><span className='font-bold text-md'>3</span></div> 
+           <div className='backdrop-blur-lg w-30 h-15 rounded-2xl items-center'><span className='text-lg font-semibold'>Projects</span><br /><span className='font-bold text-md'>5</span></div> 
+             
+          </div>
         </div>
 
         {/* Profile picture */}
