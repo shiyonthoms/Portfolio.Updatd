@@ -15,7 +15,7 @@ const skills = [
 const Sidebar = () => (
   <div className="w-full h-[80%] flex flex-col gap-6 pb-5">
     {/* Socials */}
-    <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30">
+    <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 hover:scale-105 transition duration-500">
       <h2 className="text-white font-bold text-xl mb-4">Socials</h2>
       <div className="flex flex-col gap-3">
         {socialLinks.map((social) => (
@@ -46,7 +46,7 @@ const Sidebar = () => (
     </div>
 
     {/* Skills */}
-    <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30">
+    <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 hover:scale-105 transition duration-500">
       <h2 className="text-white font-bold text-xl pb-13">Skills</h2>
       <div className="grid grid-cols-4 gap-4 text-white">
         {skills.map((skillClass, index) => (

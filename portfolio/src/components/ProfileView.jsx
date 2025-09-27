@@ -4,7 +4,7 @@ const ProfileView = ({ getDownloadFile }) => {
   return (
     <div className="w-full flex flex-col items-center gap-4">
       {/* Top Card: Profile Info */}
-      <div className="backdrop-blur-lg w-full rounded-2xl flex flex-col lg:flex-row items-center justify-center p-6 gap-6 bg-gray-800/30 lg:h-[50vh]">
+      <div className="backdrop-blur-lg w-full rounded-2xl flex flex-col lg:flex-row items-center justify-center p-6 gap-6 bg-gray-800/30 lg:h-[50vh] hover:scale-102 transition duration-500">
         {/* Text content */}
         <div className="w-full lg:w-1/2 flex flex-col items-center justify-center space-y-4 text-center order-2 lg:order-1">
           <h1 className="text-3xl sm:text-4xl font-bold text-white">
@@ -44,7 +44,7 @@ const ProfileView = ({ getDownloadFile }) => {
       {/* Bottom section: About Me & Connect */}
       <div className="w-full flex flex-col lg:flex-row items-stretch justify-center gap-4">
         {/* About Me */}
-        <div className="w-full lg:w-2/3 backdrop-blur-lg rounded-2xl p-6 bg-gray-800/30">
+        <div className="w-full lg:w-2/3 backdrop-blur-lg rounded-2xl p-6 bg-gray-800/30 hover:scale-102 transition duration-500">
           <h2 className="text-white text-xl font-semibold mb-2">About Me</h2>
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed">
             I'm a passionate IT Specialist and Full-Stack Developer who loves building functional, user-friendly digital experiences. My goal is to leverage technology to solve real-world problems while continuously growing as a developer. I aspire to work on innovative projects that make a meaningful impact.
@@ -52,7 +52,7 @@ const ProfileView = ({ getDownloadFile }) => {
         </div>
 
         {/* Connect */}
-        <div className="w-full lg:w-1/3 backdrop-blur-lg rounded-2xl flex flex-col items-center justify-center gap-4 p-6 bg-gray-800/30">
+        <div className="w-full lg:w-1/3 backdrop-blur-lg rounded-2xl flex flex-col items-center justify-center gap-4 p-6 bg-gray-800/30 hover:scale-102 transition duration-500">
           <h3 className="text-white font-bold text-lg">Connect with me</h3>
           <div className="flex flex-wrap gap-4 justify-center">
             <a href="https://www.linkedin.com/in/shiyonthomas/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-blue-500 transition text-sm">LinkedIn</a>

@@ -26,7 +26,7 @@ const EducationView = () => (
       {educationDetails.map((edu, index) => (
         <div 
           key={index} 
-          className="bg-gray-700/40 p-4 rounded-lg flex flex-col sm:flex-row items-center gap-5"
+          className="bg-gray-700/40 p-4 rounded-lg flex flex-col sm:flex-row items-center gap-5 hover:scale-102 transition duration-500"
         >
           {/* College Image */}
           <img 
