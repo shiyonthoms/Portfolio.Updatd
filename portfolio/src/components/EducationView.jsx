@@ -1,5 +1,6 @@
 import React from 'react';
-// Import your education data
+import SpotifyCard from './SpotifyCard';
+
 export const educationDetails = [
   {
     collegeName: "Amrita College of Engineering",
@@ -22,20 +23,17 @@ const EducationView = () => (
     <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center">Education</h1>
     <div className="space-y-6">
 
-      {/* Map over the educationDetails array to create a card for each entry */}
+
       {educationDetails.map((edu, index) => (
         <div 
           key={index} 
           className="bg-gray-700/40 p-4 rounded-lg flex flex-col sm:flex-row items-center gap-5 hover:scale-102 transition duration-500"
         >
-          {/* College Image */}
           <img 
             src={edu.imgs} 
             alt={`${edu.collegeName} logo`}
             className="w-20 h-20 rounded-full object-cover flex-shrink-0"
           />
-
-          {/* Education Details */}
           <div className="flex-grow text-center sm:text-left">
             <h3 className="text-xl font-semibold">{edu.degree}</h3>
             <p className="text-gray-300">{edu.collegeName}</p>

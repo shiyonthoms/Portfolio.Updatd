@@ -1,5 +1,5 @@
 import React from 'react';
-// Import your experience data
+
 export const experienceDetails = [
   {
     role: "Systems Engineer",
@@ -8,13 +8,14 @@ export const experienceDetails = [
     location: "Kerala, India",
     imgs: "/tcs-black.svg",
     description: [
-      "Executed 20+ multi-channel campaigns monthly, improving engagement (↑18% opens, ↑22% CTR).",
-      "Streamlined workflows with automation and data scripting, reducing deployment time by 25%.",
-      "Ensured brand compliance and delivered campaigns under tight Agile deadlines.",
+      "Developed and maintained responsive web interfaces using React.js, JavaScript, and Tailwind CSS, ensuring seamless user experience across devices",
+      "Collaborated with product, design, and analytics teams to build and optimize full-stack digital solutions for a Fortune 50 healthcare & retail client.",
+      "Developed reusable components and end-to-end solutions, enabling rapid feature deployment and scalable architecture for enterprise-grade applications.",
+      "Enhanced application scalability and maintainability through modular architecture, efficient state management and optimized component design."
     ],
     skills: [
-      "Adobe Campaign Classic", "SQL", "JavaScript",
-      "AEM", "HTML", "CSS"
+      "React", "Tailwind", "JavaScript",
+      "Node", "HTML", "CSS", "Express", "SQL", "PostgreSQL"
     ],
   },
   // You can easily add more jobs here in the future
