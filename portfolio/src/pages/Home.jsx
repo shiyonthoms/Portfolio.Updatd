@@ -21,7 +21,7 @@ const Home = () => {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 w-full h-screen md:h-screen backdrop-blur-sm flex justify-center px-0 md:px-8 pt-0 md:pt-8">
+      <div className="relative z-10 w-full h-screen md:h-full backdrop-blur-sm flex justify-center px-0 md:px-8 pt-0 md:pt-8">
         <div className="w-full md:w-[90%] max-w-screen-2xl bg-gray-900/40 backdrop-blur-md md:rounded-2xl flex flex-col shadow-2xl overflow-hidden">
           
           {/* NavBar stays fixed on top */}
@@ -32,7 +32,7 @@ const Home = () => {
           />
 
           {/* Scrollable main section */}
-          <div className="flex-1 w-full overflow-y-auto no-scrollbar max-h-[calc(100vh-4rem)] md:max-h-[calc(90vh-5rem)]">
+          <div className="flex-1 w-full overflow-y-auto no-scrollbar max-h-[calc(100vh-4rem)] md:max-h-[calc(100vh-5rem)]">
             <Main currentRoute={currentRoute} />
           </div>
 

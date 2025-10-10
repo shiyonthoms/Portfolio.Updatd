@@ -87,7 +87,7 @@ const ProfileView = ({ getDownloadFile }) => {
       <div className="w-full flex flex-col lg:flex-row items-stretch justify-center gap-4">
 
         <div className="w-full lg:w-2/3 backdrop-blur-lg rounded-2xl p-6 bg-gray-800/30 hover:scale-102 transition duration-500 shadow-red-800/40 hover:shadow-2xl">
-  <h2 className="text-white text-xl font-semibold  pb-2">About Me</h2>
+  <h2 className="text-white text-xl font-semibold  pb-4">About Me</h2>
 
   <ScrambledText
     className="text-gray-300 text-sm sm:text-base "
