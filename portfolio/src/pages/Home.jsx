@@ -12,7 +12,7 @@ const Home = () => {
   const [currentRoute, setCurrentRoute] = useState(routeNames[0]);
 
   return (
-    <main className="w-full h-screen relative flex items-center justify-center  bg-gray-900/90">
+    <main className="w-full overflow-hidden relative flex items-center justify-center  bg-gray-900/90">
       
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Aurora
@@ -24,8 +24,8 @@ const Home = () => {
       </div>
 
       {/* Foreground content */}
-      <div className="backdrop-blur-sm w-full h-full flex items-center justify-center md:p-4 relative z-10">
-        <div className="w-full h-full md:w-[90%] min-w-screen-2xl md:h-[95vh] bg-gray-900/40 backdrop-blur-md md:rounded-2xl flex flex-col overflow-hidden border-red-500  shadow-2xl">
+      <div className="backdrop-blur-sm w-full h-full flex items-center justify-center  relative z-10 p-0 md:pt-10 md:pd-10">
+        <div className="w-full md:w-[90%] min-w-screen-2xl md:h-[100vh] bg-gray-900/40 backdrop-blur-md md:rounded-2xl flex flex-col overflow-hidden border-red-500  shadow-2xl pt-5">
           
           <NavBar
             routeNames={routeNames}
