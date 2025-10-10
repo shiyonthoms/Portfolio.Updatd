@@ -27,7 +27,7 @@ const skills = [
 
 const Sidebar = () => (
   <div className="w-full flex flex-col gap-6">
-    {/* Socials */}
+
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 hover:scale-105 transition duration-500">
       <h2 className="text-white font-bold text-xl mb-4">Socials</h2>
       <div className="flex flex-col gap-3">
@@ -48,7 +48,7 @@ const Sidebar = () => (
       </div>
     </div>
 
-    {/* Skills */}
+ 
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 hover:scale-105 transition duration-500">
       <h2 className="text-white font-bold text-xl mb-4">Skills</h2>
       <div className="grid grid-cols-4 gap-4">
@@ -64,7 +64,6 @@ const Sidebar = () => (
       </div>
     </div>
 
-    {/* Weather & Time Card */}
     <WeatherTimeCard />
   </div>
 );

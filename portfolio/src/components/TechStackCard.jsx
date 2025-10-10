@@ -1,4 +1,4 @@
-// src/components/TechStackCard.jsx
+
 import { FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiPrisma, SiFirebase } from "react-icons/si";
 
