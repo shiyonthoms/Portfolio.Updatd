@@ -64,7 +64,7 @@ const ScrambledText = ({
   return (
     <div
       ref={rootRef}
-      className={`font-mono text-[clamp(14px,4vw,12px)] text-md text-white ${className}`}
+      className={`md:font-mono text-[clamp(14px,4vw,12px)] text-md text-white ${className}`}
       style={style}
     >
       <p>{children}</p>
