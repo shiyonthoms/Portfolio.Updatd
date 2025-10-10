@@ -12,7 +12,7 @@ const Home = () => {
   const [currentRoute, setCurrentRoute] = useState(routeNames[0]);
 
   return (
-    <main className="w-full h-full md:h-screen relative flex items-center justify-center  bg-gray-900/90">
+    <main className="w-full h-screen relative flex items-center justify-center  bg-gray-900/90">
       
       <div className="absolute inset-0 z-0 pointer-events-none">
         <Aurora
