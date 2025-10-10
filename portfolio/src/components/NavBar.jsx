@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Shuffle from "./ReactBits/Shuffle";
 
 const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +12,25 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
   return (
     <nav className="w-full flex items-center h-[72px] justify-between">
       {/* Left Side: Name/Logo */}
-      <div className="text-white font-bold text-2xl rounded-3xl px-4 py-2 bg-gray-700/40  ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2">
-        Shiyon Thomas
+      
+      <div className="text-white font-bold text-2xl rounded-full bg-gray-700/40  ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2">
+        <Shuffle
+          text="ST"
+          shuffleDirection="left"
+          duration={0.9}
+          animationMode="evenodd"
+          shuffleTimes={1}
+          ease="power3.out"
+          stagger={0.03}
+          threshold={0.1}
+          triggerOnce={false}
+          triggerOnHover={true}
+          respectReducedMotion={true}
+          className="font-bold text-white text-[20px] p-3 bg-accent-foreground/30 rounded-full"
+          loop={true}
+          loopDelay={0.9}
+        />
+        <span className="pl-2 pr-3">Shiyon Thomas</span>
       </div>
 
       {/* Center: Desktop Navigation Links */}
@@ -34,7 +52,7 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
 
       {/* Right Side: Toggling Menu Icon (Visible on mobile) */}
       {/* This button now has the highest z-index to stay on top */}
-      <div className="lg:hidden z-50  pr-1 sm:pr-2 ">
+      <div className="lg:hidden z-50  pr-1 sm:pr-2">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="text-white p-2 focus:outline-none"

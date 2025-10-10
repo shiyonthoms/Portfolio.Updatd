@@ -5,6 +5,7 @@ import ShinyText from './ReactBits/ShinyText';
 import BlurText from './ReactBits/BlurText';
 import TrueFocus from './ReactBits/TrueFocus';
 import ScrambledText from './ReactBits/ScrambledText';
+import ScrollReveal from './ReactBits/ScrollReveal';
 
 
 const ProfileView = ({ getDownloadFile }) => {
@@ -51,7 +52,7 @@ const ProfileView = ({ getDownloadFile }) => {
           <TrueFocus
             manualMode={true}
             blurAmount={3}
-            borderColor="blue"
+            borderColor="white"
             animationDuration={0.5}
             pauseBetweenAnimations={1}
             items={[
