@@ -21,8 +21,8 @@ const Home = () => {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 w-full backdrop-blur-sm flex justify-center px-2 md:px-8 pt-4 md:pt-8 ">
-        <div className="w-full md:w-[90%] max-w-screen-2xl bg-gray-900/40 backdrop-blur-md md:rounded-2xl flex flex-col shadow-2xl  border-gray-800 overflow-hidden rounded-2xl">
+      <div className="relative z-10 w-full h-screen md:h-screen backdrop-blur-sm flex justify-center px-2 md:px-8 pt-4 md:pt-8 ">
+        <div className="w-full md:w-[90%] max-w-screen-2xl bg-gray-900/40 backdrop-blur-md md:rounded-2xl flex flex-col shadow-2xl border-gray-800 overflow-hidden rounded-2xl">
           
           {/* NavBar stays fixed on top */}
           <NavBar
