@@ -80,7 +80,7 @@ const WeatherTimeCard = () => {
       ) : (
         <>
           <motion.div
-            className="flex flex-col items-center justify-center gap-2"
+            className="flex items-center justify-center gap-2"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.2 }}
@@ -91,13 +91,13 @@ const WeatherTimeCard = () => {
                 {Math.round(weather?.temperature)}°C
               </span>
             </div>
-            <p className="text-sm opacity-75">
+            {/* <p className="text-sm opacity-75">
               {weather?.weathercode === 0
                 ? "Clear Sky"
                 : weather?.weathercode < 50
                 ? "Partly Cloudy"
                 : "Rainy / Overcast"}
-            </p>
+            </p> */}
           </motion.div>
 
           {/* <div className="w-full border-t border-white/10 my-4" /> */}
