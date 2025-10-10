@@ -5,7 +5,6 @@ import EducationView from './EducationView';
 import ExperienceView from './ExperienceView';
 import ProjectsView from './ProjectView';
 import ContactView from './ContactView';
-import SpotifyCard from './SpotifyCard';
 
 
 const getDownloadFile = () => {

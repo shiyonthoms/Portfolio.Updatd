@@ -60,7 +60,7 @@ const WeatherTimeCard = () => {
       initial={{ opacity: 0, y: 10 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
-      className="relative overflow-hidden rounded-2xl backdrop-blur-lg bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-xl p-5 flex flex-col items-center text-white w-full"
+      className="relative overflow-hidden rounded-2xl backdrop-blur-lg bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-xl p-2 sm:p-5 flex flex-col items-center text-white w-full"
     >
       <motion.div
         className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-blue-400/30 to-teal-400/20 rounded-full blur-3xl"

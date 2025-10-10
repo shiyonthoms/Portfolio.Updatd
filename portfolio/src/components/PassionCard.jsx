@@ -29,7 +29,7 @@ const PassionsCard = () => {
         Beyond coding, I explore my creativity and recharge through fun activities and personal projects.
       </p>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4">
         {passions.map((passion) => (
           <div
             key={passion.name}
