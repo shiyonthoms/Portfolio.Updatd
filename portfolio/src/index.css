@@ -13,8 +13,8 @@
   color: #242424;
   background-color: #242424;
   --radius: 0.625rem;
-  ---background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.129 0.042 264.695);
+  ---background: #111828;
+  --foreground: #111828;
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.129 0.042 264.695);
   --popover: oklch(1 0 0);
