@@ -20,7 +20,7 @@ const ProfileView = ({ getDownloadFile }) => {
             delay={150}
             animateBy="words"
             direction="top"
-            className="font-mono text-3xl sm:text-4xl lg:text-4xl xl:text-5xl font-bold text-white"
+            className="font-mono text-3xl sm:text-4xl lg:text-3xl xl:text-5xl font-bold text-white"
           />
           {/* <p className="text-lg sm:text-xl font-medium text-gray-300">
             IT Specialist & Full-Stack Developer

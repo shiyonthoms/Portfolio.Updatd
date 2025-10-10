@@ -21,12 +21,12 @@ const Home = () => {
       </div>
 
       {/* Foreground container */}
-      <div className="relative z-10 flex w-full h-full items-center justify-center p-0 md:p-4 backdrop-blur-sm">
+      <div className="relative z-10 flex w-full h-full items-center justify-center p-0 lg:p-4 backdrop-blur-sm">
         <div
           className="
-            flex flex-col w-full h-full md:w-[90%] md:h-[95vh]
+            flex flex-col w-full h-full lg:w-[90%] lg:h-[95vh]
             bg-gray-900/40 backdrop-blur-md md:rounded-2xl
-            overflow-hidden shadow-2xl border border-gray-800/50
+            overflow-hidden shadow-2xl
           "
         >
           {/* Navigation */}

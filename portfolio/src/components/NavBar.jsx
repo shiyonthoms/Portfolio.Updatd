@@ -78,7 +78,7 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
       {/* This now has a lower z-index than the toggle button */}
       <div
         className={`fixed inset-0 z-40 bg-black/80 backdrop-blur-sm flex flex-col justify-center items-center transition-opacity duration-300
-        ${isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+        ${isMenuOpen ? "opacity-100" : "opacity-0 pointer-events-none"} h-screen`}
       >
         <div className="flex flex-col items-center gap-8">
           {routeNames.map((route) => (
