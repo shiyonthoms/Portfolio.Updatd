@@ -11,11 +11,12 @@ import ScrollReveal from './ReactBits/ScrollReveal';
 const ProfileView = ({ getDownloadFile }) => {
   return (
     <div className="w-full flex flex-col items-center gap-4">
-      <div className="backdrop-blur-lg w-full rounded-2xl flex flex-col lg:flex-row items-center justify-center p-6 gap-6 bg-gray-800/30 lg:h-[46vh] hover:scale-102 transition duration-500 shadow-red-800/40 hover:shadow-2xl">
+      <div className="backdrop-blur-lg w-full rounded-2xl flex flex-col lg:flex-row items-center justify-center p-6 gap-6 bg-gray-800/30 lg:h-[46vh] transition duration-500 shadow-cyan-800 hover:shadow-lg">
         <div className="w-full lg:w-[50%] flex flex-col items-center justify-center space-y-4 text-center order-2 lg:order-1">
           {/* <h1 className="text-3xl sm:text-4xl font-bold text-white">
             Hello, I'm <br /> Shiyon Thomas
           </h1> */}
+          
           <BlurText
             text="SHIYON THOMAS"
             delay={150}
@@ -86,7 +87,7 @@ const ProfileView = ({ getDownloadFile }) => {
 
       <div className="w-full flex flex-col lg:flex-row items-stretch justify-center gap-4">
 
-        <div className="w-full lg:w-2/3 backdrop-blur-lg rounded-2xl p-6 bg-gray-800/30 hover:scale-102 transition duration-500 shadow-red-800/40 hover:shadow-2xl">
+        <div className="w-full lg:w-2/3 backdrop-blur-lg rounded-2xl p-6 bg-gray-800/30 transition duration-500 shadow-cyan-800 hover:shadow-lg">
   <h2 className="text-white text-xl font-semibold  pb-4">About Me</h2>
 
   <ScrambledText
@@ -96,7 +97,7 @@ const ProfileView = ({ getDownloadFile }) => {
     speed={0.5}
     scrambleChars=".:"
   >
-    I'm Shiyon Thomas, an IT Specialist and Full-Stack Developer passionate about building functional, user-friendly digital experiences. I focus on hands-on projects that solve real-world problems and continuously improve my skills.
+    I'm Shiyon Thomas, an IT Specialist and Full-Stack Developer passionate about building functional, user friendly experiences. I focus on hands-on projects that solve real-world problems and continuously improve my skills.
     <br /><br />
     I'm driven to push boundaries, whether it's developing innovative web solutions, exploring new technologies, or enhancing my full-stack expertise. My goal is to work on impactful projects that make a meaningful difference.
     <br /><br />
@@ -106,7 +107,7 @@ const ProfileView = ({ getDownloadFile }) => {
 
 
 
-        <div className="w-full lg:w-1/3 backdrop-blur-lg rounded-2xl flex flex-col items-center justify-center gap-4 p-6 bg-gray-800/30 hover:scale-102 transition duration-500 shadow-red-800/40 hover:shadow-2xl">
+        <div className="w-full lg:w-1/3 backdrop-blur-lg rounded-2xl flex flex-col items-center justify-center gap-4 p-6 bg-gray-800/30 transition duration-500 shadow-cyan-800 hover:shadow-lg">
         <PassionsCard/>
         </div>
       </div>

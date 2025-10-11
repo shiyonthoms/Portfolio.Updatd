@@ -63,7 +63,7 @@ const ContactView = ({ getDownloadFile }) => {
               type="text" 
               name="name" 
               required 
-              className="p-3 bg-gray-700/50 rounded-lg border-none focus:ring-2 focus:ring-green-300 outline-none placeholder:text-gray-400" 
+              className="p-3 bg-gray-700/50 rounded-lg border-none focus:ring-2 focus:ring-cyan-300 outline-none placeholder:text-gray-400 shadow-cyan-800 shadow-lg" 
               placeholder="Your Name" 
               value={name} 
               onChange={(e) => setName(e.target.value)}
@@ -76,7 +76,7 @@ const ContactView = ({ getDownloadFile }) => {
               type="email" 
               name="email" 
               required 
-              className="p-3 bg-gray-700/50 rounded-lg border-none focus:ring-2 focus:ring-green-300 outline-none placeholder:text-gray-400" 
+              className="p-3 bg-gray-700/50 rounded-lg border-none focus:ring-2 focus:ring-cyan-300 outline-none placeholder:text-gray-400 shadow-cyan-800 shadow-lg" 
               placeholder="Your Email" 
               value={email} 
               onChange={(e) => setEmail(e.target.value)}
@@ -90,7 +90,7 @@ const ContactView = ({ getDownloadFile }) => {
             name="message" 
             required 
             rows="5"
-            className="p-3 bg-gray-700/50 rounded-lg border-none focus:ring-2 focus:ring-green-300 outline-none placeholder:text-gray-400 resize-none" 
+            className="p-3 bg-gray-700/50 rounded-lg border-none focus:ring-2 focus:ring-cyan-300 outline-none placeholder:text-gray-400 resize-none shadow-cyan-800 shadow-lg" 
             placeholder="Drop your message here..." 
             value={message} 
             onChange={(e) => setMessage(e.target.value)}

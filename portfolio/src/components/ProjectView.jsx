@@ -81,7 +81,7 @@ const ProjectsView = () => {
           <div
             key={index}
             onClick={() => setSelectedProject(project)}
-            className="bg-gray-700/40 rounded-lg overflow-hidden group transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-green-900/40 cursor-pointer"
+            className="bg-gray-700/40 overflow-hidden group transform transition-transform duration-300 hover:scale-105 cursor-pointer shadow-cyan-800 hover:shadow-lg rounded-2xl"
           >
             <img
               src={project.imgs}

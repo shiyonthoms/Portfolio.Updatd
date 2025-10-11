@@ -24,13 +24,13 @@ export const educationDetails = [
 ];
 
 const EducationView = () => (
-  <div className="text-white w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30">
+  <div className="text-white w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30 ">
     <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center">Education</h1>
-    <div className="space-y-6">
+    <div className="space-y-6 ">
       {educationDetails.map((edu, index) => (
         <div 
           key={index} 
-          className="bg-gray-700/40 p-4 rounded-lg flex flex-col sm:flex-row items-center gap-5 hover:scale-102 transition duration-500"
+          className="bg-gray-700/40 p-4 rounded-lg flex flex-col sm:flex-row items-center gap-5 transition duration-500 shadow-cyan-800 hover:shadow-lg"
         >
           <img 
             src={edu.imgs} 

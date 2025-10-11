@@ -24,8 +24,8 @@ export const experienceDetails = [
 
 const ExperienceView = () => (
   <div className="w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30">
-    <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center">Experience</h1>
-    <div className="space-y-8 hover:scale-102 transition duration-500">
+    <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">Experience</h1>
+    <div className="space-y-8 transition duration-500 shadow-cyan-800 hover:shadow-lg rounded-2xl">
 
       {/* Map over the experienceDetails array */}
       {experienceDetails.map((exp, index) => (
@@ -42,7 +42,7 @@ const ExperienceView = () => (
 
           {/* Experience Details */}
           <div className="flex-grow text-center sm:text-left">
-            <h3 className="text-xl font-semibold">{exp.role}</h3>
+            <h3 className="text-xl font-semibold text-white">{exp.role}</h3>
             <p className="text-gray-300 font-medium">{exp.companyName}</p>
             <p className="text-gray-400 text-sm mb-3">{exp.from}</p>
             
@@ -56,7 +56,7 @@ const ExperienceView = () => (
             {/* Skills */}
             <div className="flex flex-wrap gap-2 justify-center sm:justify-start">
               {exp.skills.map((skill, i) => (
-                <span key={i} className="bg-gray-600/50 text-xs font-semibold px-3 py-1 rounded-full">
+                <span key={i} className="bg-gray-600/50 text-xs font-semibold px-3 py-1 rounded-full text-white">
                   {skill}
                 </span>
               ))}
