@@ -1,4 +1,5 @@
 import React from 'react';
+import {motion} from "framer-motion"
 
 export const experienceDetails = [
   {
@@ -24,6 +25,11 @@ export const experienceDetails = [
 
 const ExperienceView = () => (
   <div className="w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30">
+    <motion.div
+        initial={{opacity:0}}
+        animate={{opacity:1}}
+        exit={{opacity:0}}
+        transition={{duration:1.3}}>
     <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center text-white">Experience</h1>
     <div className="space-y-8 transition duration-500 shadow-cyan-800 hover:shadow-lg rounded-2xl">
 
@@ -66,6 +72,7 @@ const ExperienceView = () => (
       ))}
       
     </div>
+    </motion.div>
   </div>
 );
 

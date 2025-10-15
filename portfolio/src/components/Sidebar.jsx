@@ -2,6 +2,7 @@ import { FaReact, FaJs, FaHtml5, FaCss3Alt, FaGitAlt, FaPython, FaNodeJs } from 
 import { SiPrisma, SiTailwindcss, SiPostgresql, SiNextdotjs, SiFirebase } from "react-icons/si";
 import WeatherTimeCard from "./WeatherTimeCard";
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import {motion} from "framer-motion"
 
 const socialLinks = [
   { name: "Facebook", href: "https://www.facebook.com/shiyon.thomas/", icon: <FaFacebookF /> },
@@ -29,6 +30,11 @@ const Sidebar = () => (
   
   <div className="w-full flex flex-col gap-6">
 
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    transition={{duration:1.3}}>
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 transition duration-500 shadow-cyan-800 hover:shadow-lg">
     
       <h2 className="text-white font-bold text-xl mb-4">Socials</h2>
@@ -49,7 +55,6 @@ const Sidebar = () => (
         ))}
       </div>
     </div>
-
  
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 transition duration-500 shadow-cyan-800 hover:shadow-lg">
       <h2 className="text-white font-bold text-xl mb-4">Skills</h2>
@@ -68,7 +73,7 @@ const Sidebar = () => (
     <div className="pb-2">
       <WeatherTimeCard />
       </div>
-    
+    </motion.div>
   </div>
 );
 

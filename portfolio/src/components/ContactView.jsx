@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from "@emailjs/browser";
+import {motion} from "framer-motion"
 
 const ContactView = ({ getDownloadFile }) => {
   // State for form inputs and loading status
@@ -42,6 +43,11 @@ const ContactView = ({ getDownloadFile }) => {
 
   return (
     <div className="text-white w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30 h-full lg:h-[82%]">
+      <motion.div
+                    initial={{opacity:0}}
+                    animate={{opacity:1}}
+                    exit={{opacity:0}}
+                    transition={{duration:1.3}}>
       {/* Header Section */}
       <div className="flex flex-col sm:flex-row justify-between items-center mb-8">
         <h1 className="text-2xl md:text-3xl font-bold">Get in Touch</h1>
@@ -110,6 +116,7 @@ const ContactView = ({ getDownloadFile }) => {
           </div>
         </div>
       </form>
+      </motion.div>
     </div>
   );
 };

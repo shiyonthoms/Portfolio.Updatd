@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {motion} from "framer-motion"
 
 
 
@@ -25,6 +25,11 @@ export const educationDetails = [
 
 const EducationView = () => (
   <div className="text-white w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30 ">
+    <motion.div
+    initial={{opacity:0}}
+    animate={{opacity:1}}
+    exit={{opacity:0}}
+    transition={{duration:1.3}}>
     <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center">Education</h1>
     <div className="space-y-6 ">
       {educationDetails.map((edu, index) => (
@@ -52,6 +57,7 @@ const EducationView = () => (
       ))}
       
     </div>
+    </motion.div>
 
   </div>
 );

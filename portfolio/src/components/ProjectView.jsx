@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import {motion} from "framer-motion"
 
 export const projectInfo = [
   {
@@ -72,6 +73,11 @@ const ProjectsView = () => {
 
   return (
     <div className="text-white w-full p-6 backdrop-blur-lg rounded-2xl bg-gray-800/30">
+      <motion.div
+              initial={{opacity:0}}
+              animate={{opacity:1}}
+              exit={{opacity:0}}
+              transition={{duration:1.3}}>
       <h1 className="text-2xl md:text-3xl font-bold mb-8 text-center">
         Projects
       </h1>
@@ -154,6 +160,7 @@ const ProjectsView = () => {
           </div>
         </div>
       )}
+      </motion.div>
     </div>
   );
 };
