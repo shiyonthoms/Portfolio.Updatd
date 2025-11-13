@@ -1,5 +1,9 @@
 import { useState } from "react";
+import DecryptedText from './ReactBits/DecryptedText';
 import Shuffle from "./ReactBits/Shuffle";
+import { motion } from "framer-motion";
+import ASCIIText from "./ReactBits/ASCIIText";
+
 
 const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,7 +17,7 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
     <nav className="w-full flex items-center h-[72px] justify-between">
       {/* Left Side: Name/Logo */}
       
-      <div className="text-white font-bold text-2xl rounded-full bg-gray-700/40  ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2 border-none md:ring-3 md:ring-cyan-500 md:shadow-black md:shadow-lg">
+      {/* <div className="text-white font-bold text-2xl rounded-full bg-gray-700/40  ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2 border-none md:ring-3 md:ring-cyan-500 md:shadow-black md:shadow-lg">
       
         <Shuffle
           text="ST"
@@ -27,12 +31,24 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
           triggerOnce={false}
           triggerOnHover={true}
           respectReducedMotion={true}
-          className="font-bold text-white text-[20px] p-3 bg-accent-foreground/30 rounded-full border-none md:ring-3 md:ring-cyan-500 md:shadow-black "
+          className="font-bold text-white text-[20px] p-3 bg-accent-foreground/30 rounded-full border-none md:ring-3 md:ring-cyan-500 md:shadow-black"
           loop={true}
           loopDelay={0.9}
         />
         <span className="pl-2 pr-3">Shiyon Thomas</span>
-      </div>
+      </div> */}
+ <div className="ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2 flex items-center justify-start">
+  <div className="relative w-60 h-20 overflow-hidden">
+    <ASCIIText
+      text="SHIYON."
+      enableWaves={true}
+      asciiFontSize={1}     // keep readable!
+      textFontSize={500}     // controls true size
+      planeBaseHeight={10}   // gentle size reduction
+    />
+  </div>
+</div>
+
 
       {/* Center: Desktop Navigation Links */}
       <div className="hidden lg:flex items-center space-x-6 mr-0 lg:mr-10">

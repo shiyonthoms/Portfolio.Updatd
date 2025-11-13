@@ -4,15 +4,15 @@ import {motion} from "framer-motion"
 
 
 export const educationDetails = [
-  {
-    collegeName: "Amrita College of Engineering",
-    degree: "Master of Computer Application (MCA)",
-    from: "2020 - 2022",
-    imgs: "/amritaCollege.jpg",
-    cgpa: "8.2",
-    location: "Kerala, India",
+  // {
+  //   collegeName: "Amrita College of Engineering",
+  //   degree: "Master of Computer Application (MCA)",
+  //   from: "2020 - 2022",
+  //   imgs: "/amritaCollege.jpg",
+  //   cgpa: "8.2",
+  //   location: "Kerala, India",
 
-  },
+  // },
   {
     collegeName: "St. Philomenas College",
     degree: "Bachelor of Computer Application (BCA)",

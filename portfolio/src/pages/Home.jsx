@@ -12,9 +12,9 @@ const Home = () => {
   const [currentRoute, setCurrentRoute] = useState(routeNames[0]);
 
   return (
-    <main className="relative flex flex-col items-center justify-start w-full min-h-screen bg-gray-900/90 overflow-hidden">
+    <main className="relative flex flex-col items-center justify-start w-full min-h-screen bg-gray-900/90 overflow-hidden border-0">
       {/* Background PixelBlast - NO pointer-events-none! */}
-      <div className="absolute inset-0 z-0 backdrop-blur-sm">
+      <div className="absolute inset-0 z-0 backdrop-blur-sm border-0 ">
         {/* <PixelBlast
           variant="circle"
           pixelSize={6}
@@ -43,7 +43,7 @@ const Home = () => {
       </div>
 
       {/* Foreground content */}
-      <div className="relative z-10 w-full h-screen md:h-full flex justify-center px-0 lg:px-8 pt-0 md:pt-8 pointer-events-none ">
+      <div className="relative z-10 w-full h-screen md:h-full flex justify-center px-0 lg:px-8 pt-0 md:pt-8 pointer-events-none">
         <div className="w-full md:w-[90%] max-w-screen-2xl bg-gray-900/30 backdrop-blur-sm md:rounded-2xl flex flex-col shadow-2xl overflow-hidden pointer-events-auto ">
           
           {/* NavBar stays fixed on top */}

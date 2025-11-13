@@ -5,10 +5,11 @@ import { FaFacebookF, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa
 import {motion} from "framer-motion"
 
 const socialLinks = [
-  { name: "Facebook", href: "https://www.facebook.com/shiyon.thomas/", icon: <FaFacebookF /> },
-  { name: "Instagram", href: "https://www.instagram.com/shiyonthoms/", icon: <FaInstagram /> },
   { name: "LinkedIn", href: "https://www.linkedin.com/in/shiyonthomas/", icon: <FaLinkedinIn /> },
   { name: "GitHub", href: "https://github.com/shiyonthoms", icon: <FaGithub /> },
+  { name: "Facebook", href: "https://www.facebook.com/shiyon.thomas/", icon: <FaFacebookF /> },
+  { name: "Instagram", href: "https://www.instagram.com/shiyonthoms/", icon: <FaInstagram /> },
+  
 ];
 
 const skills = [
@@ -28,13 +29,14 @@ const skills = [
 
 const Sidebar = () => (
   
-  <div className="w-full flex flex-col gap-6">
+  <div className="w-full flex flex-col">
 
     <motion.div
     initial={{opacity:0}}
     animate={{opacity:1}}
     exit={{opacity:0}}
-    transition={{duration:1.3}}>
+    transition={{duration:1.3}}
+    className="space-y-2">
     <div className="backdrop-blur-md rounded-2xl p-4 bg-gray-800/30 transition duration-500 shadow-cyan-800 hover:shadow-lg">
     
       <h2 className="text-white font-bold text-xl mb-4">Socials</h2>
@@ -70,9 +72,9 @@ const Sidebar = () => (
         ))}
       </div>
     </div>
-    <div className="pb-2">
+    {/* <div className="pb-2">
       <WeatherTimeCard />
-      </div>
+      </div> */}
     </motion.div>
   </div>
 );

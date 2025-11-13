@@ -91,17 +91,13 @@ const ProfileView = ({ getDownloadFile }) => {
   <h2 className="text-white text-xl font-semibold  pb-4">About Me</h2>
 
   <ScrambledText
-    className="text-gray-300 text-sm sm:text-base "
+    className="text-gray-300 text-sm sm:text-base pb-3"
     radius={50}
     duration={1.2}
     speed={0.5}
     scrambleChars=".:"
   >
-    I'm Shiyon Thomas, an IT Specialist and Full-Stack Developer passionate about building functional, user friendly experiences. I focus on hands-on projects that solve real-world problems and continuously improve my skills.
-    <br /><br />
-    I'm driven to push boundaries, whether it's developing innovative web solutions, exploring new technologies, or enhancing my full-stack expertise. My goal is to work on impactful projects that make a meaningful difference.
-    <br /><br />
-   Let's connect to collaborate or chat about tech or even share ideas!
+    I'm Shiyon Thomas, an IT Specialist and Full-Stack Developer who loves building clean, functional, and user-focused digital experiences. I enjoy working on practical projects that solve real problems while constantly expanding my technical skills. I'm driven by curiosity, new technologies, and creating solutions that genuinely make an impact.
   </ScrambledText>
 </div>
 

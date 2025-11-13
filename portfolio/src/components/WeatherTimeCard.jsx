@@ -57,65 +57,47 @@ const WeatherTimeCard = () => {
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 10 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5 }}
-      className="relative overflow-hidden rounded-2xl backdrop-blur-lg bg-gradient-to-br from-white/10 to-white/5 border border-white/10 shadow-xl p-2 sm:p-5 flex flex-col items-center text-white w-full"
-    >
+  initial={{ opacity: 0, y: 10 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className="relative overflow-hidden rounded-xl backdrop-blur-lg bg-gradient-to-br from-white/10 to-white/5
+  border border-white/10 shadow-xl p-2 sm:p-3 flex flex-col items-center text-white w-full scale-[0.92]"
+>
+  <motion.div
+    className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-blue-400/30 to-teal-400/20 
+    rounded-full blur-3xl"
+    animate={{ rotate: 360 }}
+    transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
+  />
+
+  <h2 className="text-sm font-medium tracking-wide mb-1 flex items-center gap-1">
+    <MapPin size={14} className="text-teal-300" />
+    Kerala, India
+  </h2>
+
+  {loading ? (
+    <div className="flex flex-col items-center justify-center py-4">
+      <Loader2 className="animate-spin text-teal-300" size={22} />
+      <p className="text-xs opacity-70 mt-2">Fetching live data...</p>
+    </div>
+  ) : (
+    <>
       <motion.div
-        className="absolute -top-10 -right-10 w-32 h-32 bg-gradient-to-br from-blue-400/30 to-teal-400/20 rounded-full blur-3xl"
-        animate={{ rotate: 360 }}
-        transition={{ repeat: Infinity, duration: 40, ease: "linear" }}
-      />
-      <h2 className="text-base font-medium tracking-wide mb-2 flex items-center gap-1">
-        <MapPin size={16} className="text-teal-300" />
-        Kerala, India
-      </h2>
-
-      {loading ? (
-        <div className="flex flex-col items-center justify-center py-6">
-          <Loader2 className="animate-spin text-teal-300" size={28} />
-          <p className="text-sm opacity-70 mt-2">Fetching live data...</p>
+        className="flex flex-col items-center justify-center gap-1"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.2 }}
+      >
+        <div className="flex items-center gap-2">
+          {getWeatherIcon(weather?.weathercode, 24)}
+          <span className="text-3xl font-semibold drop-shadow-sm">
+            {Math.round(weather?.temperature)}°C
+          </span>
         </div>
-      ) : (
-        <>
-          <motion.div
-            className="flex flex-col items-center justify-center gap-2"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.2 }}
-          >
-            <div className="flex items-center gap-2">
-              {getWeatherIcon(weather?.weathercode)}
-              <span className="text-4xl font-semibold drop-shadow-sm">
-                {Math.round(weather?.temperature)}°C
-              </span>
-            </div>
-            <p className="text-sm opacity-75">
-              {weather?.weathercode === 0
-                ? "Clear Sky"
-                : weather?.weathercode < 50
-                ? "Partly Cloudy"
-                : "Rainy / Overcast"}
-            </p>
-          </motion.div>
-
-          {/* <div className="w-full border-t border-white/10 my-4" /> */}
-
-          {/* <motion.div
-            className="text-center"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.3 }}
-          >
-            <p className="text-xs uppercase tracking-widest opacity-70 mb-1">
-              Local Time
-            </p>
-            <p className="text-2xl font-mono font-light">{time}</p>
-          </motion.div> */}
-        </>
-      )}
-    </motion.div>
+      </motion.div>
+    </>
+  )}
+</motion.div>
   );
 };
 
