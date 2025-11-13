@@ -40,7 +40,7 @@ const NavBar = ({ routeNames, currentRoute, setCurrentRoute }) => {
  <div className="ml-2 z-40 lg:ml-12 md:ml-4 sm:ml-2 flex items-center justify-start">
   <div className="relative w-60 h-20 overflow-hidden">
     <ASCIIText
-      text="SHIYON."
+      text="SHIYON"
       enableWaves={true}
       asciiFontSize={1}     // keep readable!
       textFontSize={500}     // controls true size
