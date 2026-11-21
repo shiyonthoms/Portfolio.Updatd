@@ -2,6 +2,7 @@
   "name": "shiyon-thomas-portfolio",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@11.28.5",
   "description": "Shiyon Thomas — Adobe Campaign Developer & MarTech Systems Architect portfolio.",
   "scripts": {
     "dev": "next dev",
