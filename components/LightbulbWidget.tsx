@@ -112,7 +112,7 @@ export default function LightbulbWidget() {
 
   return (
     <div
-      className="fixed top-0 right-8 sm:right-12 z-50 flex flex-col items-center select-none pointer-events-auto"
+      className="fixed top-0 right-8 sm:right-12 z-50 hidden md:flex flex-col items-center select-none pointer-events-auto"
       id="vintage-lightbulb-widget"
       style={{ filter: "drop-shadow(rgba(0, 0, 0, 0.12) 0px 10px 18px)" }}
     >
