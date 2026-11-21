@@ -111,7 +111,7 @@ export default function Hero() {
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
             <div className="md:col-span-5 relative flex items-center justify-center">
-              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] sm:w-[580px] sm:h-[580px] pointer-events-none -z-10 overflow-visible flex items-center justify-center"></div>
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[520px] h-[520px] sm:w-[580px] sm:h-[580px] pointer-events-none -z-10 overflow-visible hidden sm:flex items-center justify-center"></div>
               <div className="relative w-full aspect-square rounded-2xl bg-[#111111] border border-[#E2DDD5] shadow-liquid-glass group z-10">
                 <div className="w-full h-full rounded-2xl overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -183,7 +183,7 @@ export default function Hero() {
               </div>
               <div className="grid grid-cols-3 gap-3 pt-3 border-t border-[#E2DDD5]">
                 <div className="p-3 bg-[#EFEAE1]/55 rounded-xl border border-[#E2DDD5]">
-                  <div className="text-2xl sm:text-3xl font-black text-[#111111] font-mono">
+                  <div className="text-xl sm:text-3xl font-black text-[#111111] font-mono">
                     15M+
                   </div>
                   <div className="text-[10px] font-mono text-[#52504C] uppercase tracking-wider mt-1">
@@ -191,7 +191,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="p-3 bg-[#EFEAE1]/55 rounded-xl border border-[#E2DDD5]">
-                  <div className="text-2xl sm:text-3xl font-black text-[#111111] font-mono">
+                  <div className="text-xl sm:text-3xl font-black text-[#111111] font-mono">
                     v7 → v8
                   </div>
                   <div className="text-[10px] font-mono text-[#52504C] uppercase tracking-wider mt-1">
@@ -199,7 +199,7 @@ export default function Hero() {
                   </div>
                 </div>
                 <div className="p-3 bg-[#EFEAE1]/55 rounded-xl border border-[#E2DDD5]">
-                  <div className="text-2xl sm:text-3xl font-black text-[#111111] font-mono">
+                  <div className="text-xl sm:text-3xl font-black text-[#111111] font-mono">
                     99.98%
                   </div>
                   <div className="text-[10px] font-mono text-[#52504C] uppercase tracking-wider mt-1">

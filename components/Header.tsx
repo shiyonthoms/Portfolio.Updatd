@@ -26,8 +26,8 @@ export default function Header() {
               Shiyon Thomas
             </span>
           </a>
-          <div className="flex items-center gap-3">
-            <span className="text-xs font-mono text-[#52504C] truncate">
+          <div className="flex items-center gap-3 min-w-0">
+            <span className="text-xs font-mono text-[#52504C] truncate min-w-0">
               Adobe Campaign Developer • Capgemini
             </span>
             <button

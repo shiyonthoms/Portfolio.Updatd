@@ -105,7 +105,7 @@ export default function Blueprints() {
             </h2>
           </div>
           {/* Filter Tabs */}
-          <div className="inline-flex items-center gap-1 p-1 rounded-xl bg-[#EFEAE1]/80 border border-[#E2DDD5] text-xs font-mono">
+          <div className="inline-flex flex-wrap justify-center items-center gap-1 p-1 rounded-xl bg-[#EFEAE1]/80 border border-[#E2DDD5] text-xs font-mono">
             {FILTERS.map((filter) => {
               const isActive = activeFilter === filter.category;
               return (
