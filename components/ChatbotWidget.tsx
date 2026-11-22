@@ -6,7 +6,7 @@ type Message = { role: "user" | "bot"; text: string };
 
 const ANSWERS = {
   migration:
-    "Shiyon currently leads technical execution of Adobe Campaign migration from v7 to v8 at Capgemini. He specializes in zero-downtime cutovers, refactoring relational schemas (nms:recipient), and validating bidirectional GCP BigQuery & Cloud Storage pipelines.",
+    "Shiyon currently develops technical execution of Adobe Campaign migration from v7 to v8 at Capgemini. He specializes in zero-downtime cutovers, refactoring relational schemas (nms:recipient), and validating bidirectional GCP BigQuery & Cloud Storage pipelines.",
   jssp: "Shiyon writes high-performance server-side JavaScript (JSSP) modules for real-time personalization, complex XML parsing, dynamic product recommendations, and custom delivery MTA throughput tuning.",
   experience:
     "Shiyon has 4+ years of specialized MarTech experience: currently Associate Consultant at Capgemini (v8 Migration Lead), formerly Systems Engineer at TCS (3+ years managing Fortune 50 healthcare campaigns dispatching 15M+ messages/mo).",
@@ -230,13 +230,13 @@ export default function ChatbotWidget() {
             <div className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse"></div>
             <div>
               <h3 className="text-xs font-bold text-[#111111] dark:text-[#EDE8E1] font-mono tracking-tight flex items-center gap-1.5">
-                <span>Shiyon AI Companion</span>
-                <span className="text-[9px] px-2 py-0.5 rounded font-mono font-bold tracking-wider bg-gradient-to-r from-emerald-500 to-teal-400 text-black shadow-sm">
-                  v8.TURBO
-                </span>
+                <span>Shiyon's AI Companion</span>
+                {/* <span className="text-[9px] px-2 py-0.5 rounded font-mono font-bold tracking-wider bg-gradient-to-r from-emerald-500 to-teal-400 text-black shadow-sm"> */}
+                  {/* v8.TURBO */}
+                {/* </span> */}
               </h3>
               <p className="text-[10px] text-[#52504C] dark:text-[#A8A39C] font-mono">
-                Adobe Campaign Intelligence
+                {/* Adobe Campaign Intelligence */}
               </p>
             </div>
           </div>
@@ -275,8 +275,7 @@ export default function ChatbotWidget() {
                 </span>
               </p>
               <p className="text-[11px] leading-relaxed text-[#52504C] dark:text-[#C7C2BA]">
-                How can I help you explore Shiyon&apos;s Adobe Campaign
-                architecture, migrations, or MarTech systems today?
+                How can I help you explore Shiyon&apos;s portfolio?
               </p>
             </div>
           </div>
