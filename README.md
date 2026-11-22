@@ -36,6 +36,29 @@ NEXT_PUBLIC_SITE_URL=https://your-domain.com
 
 This value drives canonical URLs, the sitemap, and Open Graph metadata.
 
+## AI Chatbot (DeepSeek)
+
+The floating "Shiyon AI Companion" is powered by the [DeepSeek API](https://api.deepseek.com).
+The browser never sees your key: it calls a server route (`app/api/chat/route.ts`)
+which proxies the request with `DEEPSEEK_API_KEY` and streams the reply back.
+
+Add your key to `.env.local` (and to your Vercel project's Environment Variables):
+
+```bash
+DEEPSEEK_API_KEY=sk-your-key-here
+# optional, defaults to deepseek-flash
+DEEPSEEK_MODEL=deepseek-flash
+```
+
+Get a key at [platform.deepseek.com/api_keys](https://platform.deepseek.com/api_keys).
+If the key is missing, the chatbot automatically falls back to its built-in
+keyword-based answers, so the site keeps working.
+
+The assistant is constrained by a system prompt to answer only about Shiyon's
+professional profile (career, skills, projects, education, contact) and to avoid
+inventing facts. Edit `SYSTEM_PROMPT` in `app/api/chat/route.ts` to change the
+knowledge base.
+
 ## SEO Features
 
 - Server-rendered page content (fully crawlable)
@@ -57,6 +80,7 @@ app/
   robots.ts           # Robots.txt
   icon.svg            # Favicon
   opengraph-image.tsx # OG image
+  api/chat/route.ts   # DeepSeek chat proxy (server-side)
 components/
   PortfolioPage.tsx   # Page assembly + scroll-reveal observer
   Header.tsx          # Liquid-glass nav pill
@@ -69,6 +93,7 @@ components/
   Contact.tsx
   Footer.tsx
   LightbulbWidget.tsx # Dark-mode toggle
+  ChatbotWidget.tsx   # AI companion (chatbot)
   icons.tsx           # Inline SVG icon set
 lib/
   site.ts             # Central site configuration

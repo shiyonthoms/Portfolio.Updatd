@@ -48,6 +48,7 @@ export default function ChatbotWidget() {
   const [open, setOpen] = useState(false);
   const [messages, setMessages] = useState<Message[]>([]);
   const [input, setInput] = useState("");
+  const [isTyping, setIsTyping] = useState(false);
 
   const sphereRef = useRef<HTMLDivElement>(null);
   const pupilLeftRef = useRef<HTMLDivElement>(null);
@@ -153,16 +154,66 @@ export default function ChatbotWidget() {
     };
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const val = input.trim();
-    if (!val) return;
-    setMessages((prev) => [...prev, { role: "user", text: val }]);
+    if (!val || isTyping) return;
+
+    const userMessage: Message = { role: "user", text: val };
+    const history = [...messages, userMessage].map((m) => ({
+      role: m.role === "bot" ? "assistant" : "user",
+      content: m.text,
+    }));
+
+    setMessages((prev) => [...prev, userMessage]);
     setInput("");
-    const reply = matchAnswer(val);
-    setTimeout(() => {
-      setMessages((prev) => [...prev, { role: "bot", text: reply }]);
-    }, 450);
+    setIsTyping(true);
+
+    try {
+      const res = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: history }),
+      });
+
+      if (!res.ok || !res.body) {
+        throw new Error("Chat service unavailable.");
+      }
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let acc = "";
+      let started = false;
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        acc += decoder.decode(value, { stream: true });
+        if (!started) {
+          started = true;
+          setIsTyping(false);
+          setMessages((prev) => [...prev, { role: "bot", text: acc }]);
+        } else {
+          setMessages((prev) => {
+            const copy = [...prev];
+            copy[copy.length - 1] = { role: "bot", text: acc };
+            return copy;
+          });
+        }
+      }
+
+      if (!started) {
+        setIsTyping(false);
+        setMessages((prev) => [
+          ...prev,
+          { role: "bot", text: matchAnswer(val) },
+        ]);
+      }
+    } catch {
+      // Graceful fallback to the built-in knowledge base.
+      setIsTyping(false);
+      setMessages((prev) => [...prev, { role: "bot", text: matchAnswer(val) }]);
+    }
   };
 
   return (
@@ -249,6 +300,20 @@ export default function ChatbotWidget() {
               </div>
             )
           )}
+
+          {/* Typing indicator */}
+          {isTyping && (
+            <div className="flex items-start gap-2">
+              <div className="w-5 h-5 rounded-full bg-stone-300 dark:bg-stone-700 shrink-0 flex items-center justify-center text-[9px] mt-0.5">
+                ✨
+              </div>
+              <div className="p-3 rounded-2xl rounded-tl-sm bg-[#EFEAE1]/80 dark:bg-white/10 border border-[#E2DDD5] dark:border-white/10 flex items-center gap-1 shadow-sm">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#52504C] dark:bg-[#A8A39C] animate-bounce [animation-delay:0ms]"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#52504C] dark:bg-[#A8A39C] animate-bounce [animation-delay:150ms]"></span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#52504C] dark:bg-[#A8A39C] animate-bounce [animation-delay:300ms]"></span>
+              </div>
+            </div>
+          )}
         </div>
 
         {/* Input Footer */}
@@ -267,7 +332,8 @@ export default function ChatbotWidget() {
           <button
             aria-label="Send message"
             type="submit"
-            className="w-8 h-8 rounded-xl bg-[#111111] hover:bg-[#2a2927] text-white flex items-center justify-center transition-all shrink-0 dark:bg-white dark:text-black"
+            disabled={isTyping}
+            className="w-8 h-8 rounded-xl bg-[#111111] hover:bg-[#2a2927] text-white flex items-center justify-center transition-all shrink-0 dark:bg-white dark:text-black disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <svg
               className="w-3.5 h-3.5"
