@@ -3,9 +3,9 @@ import { AwardIcon, ExternalLinkIcon } from "./icons";
 const QUADRANTS = [
   {
     kicker: "01 // PLATFORM",
-    title: "Adobe Campaign Core",
+    title: "Adobe Core",
     desc: "Technical execution across Classic v7 & v8 architectures, routing topologies, and delivery servers.",
-    tags: ["ACC v7 • v8", "Workflows", "Data Schemas", "MTA Delivery"],
+    tags: ["ACC v7 • v8", "AEM", "Data Schemas", "ETL", "HTML/CSS", "REST APIs", "OAuth 2.0"],
   },
   {
     kicker: "02 // SCRIPTING",

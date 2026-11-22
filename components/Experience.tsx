@@ -5,10 +5,10 @@ const EXPERIENCES = [
     periodColor: "text-[#111111]",
     role: "Associate Consultant",
     company: "at Capgemini",
-    badge: "v8 Migration Lead",
+    badge: "Fortune 50 Scale",
     badgeClass: "px-2.5 py-1 rounded-md bg-[#111111] text-white text-xs font-mono font-semibold",
     summary:
-      "Leading technical execution of Adobe Campaign migration from v7 to v8 architecture, ensuring continuous campaign delivery with zero operational downtime for enterprise clients.",
+      "Technical execution of Adobe Campaign migration from v7 to v8 architecture, ensuring continuous campaign delivery with zero operational downtime for enterprise clients.",
     bulletColor: "text-[#111111]",
     bullets: [
       "Executed end-to-end migration of Adobe Campaign from v7 to v8; including technical workflow rebuilds, data model validation, and post-migration regression testing.",

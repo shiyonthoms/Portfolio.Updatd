@@ -63,7 +63,7 @@ export default function Architecture() {
               in enterprise marketing technology stacks, I focus on the
               technical engineering layer within{" "}
               <strong className="text-[#111111] font-semibold">
-                Adobe Campaign Classic (v7 and v8)
+                Adobe MarTech Stack
               </strong>
               . My focus centers on schema extensions, indexing strategies,
               complex JSSP scripting, and distributed delivery infrastructure.

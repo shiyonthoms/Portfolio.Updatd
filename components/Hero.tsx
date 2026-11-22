@@ -51,31 +51,29 @@ export default function Hero() {
         <div className="flex flex-col items-center text-center max-w-4xl mx-auto pt-6 pb-4">
           <div className="apple-blur-reveal inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/70 backdrop-blur-2xl border border-[#E2DDD5] shadow-liquid-glass text-xs font-mono text-[#111111] mb-6 in-view">
             <span className="w-2 h-2 rounded-full bg-[#111111] animate-ping"></span>
-            <span>Adobe Certified Expert • Active Production Lead</span>
+            <span>Adobe Certified Expert</span>
           </div>
           <h1 className="apple-blur-reveal text-4xl sm:text-6xl md:text-7xl font-extrabold text-[#111111] tracking-tight leading-[1.08] mb-6 in-view">
-            Architecting
+            Developing
             <br />
             <span className="underline decoration-[#E2DDD5] decoration-4 underline-offset-8">
-              Mission-Critical Scale.
+              Your MarTech Journey.
             </span>
           </h1>
           <p className="apple-blur-reveal text-lg sm:text-xl text-[#52504C] font-normal max-w-2xl leading-relaxed mb-8 in-view">
-            MTA Throughput. Zero-Downtime Parity. Pure Architectural Precision.
+            Data. Automation. Personalization.
             I am{" "}
             <strong className="text-[#111111] font-semibold">
               Shiyon Thomas
             </strong>
-            , Associate Consultant at Capgemini (ex-TCS), engineering
-            high-velocity Adobe Campaign Classic v7 to v8 cloud platform
-            migrations.
+            , Associate Consultant at Capgemini (ex-TCS), engineering the data pipelines, schema design and lifecycle journeys that power personalized campaigns at enterprise scale.
           </p>
           <div className="apple-blur-reveal flex flex-wrap items-center justify-center gap-4 mb-12 in-view">
             <a
               className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-[#111111] hover:bg-[#2a2927] text-white text-xs font-mono font-semibold tracking-wide transition-all shadow-md hover:shadow-lg"
               href="#workflows"
             >
-              <span>Explore Architecture</span>
+              <span>Start the Journey</span>
               <ChevronDownIcon className="w-3.5 h-3.5" />
             </a>
             <a
@@ -96,15 +94,12 @@ export default function Hero() {
               <span className="w-3 h-3 rounded-full bg-[#E2DDD5]"></span>
               <span className="w-3 h-3 rounded-full bg-[#E2DDD5]"></span>
               <span className="ml-2 font-semibold text-[#111111]">
-                SHIYON_THOMAS // ENTERPRISE_CORE.sys
+                SHIYON_THOMAS
               </span>
             </div>
             <div className="flex items-center gap-3">
               <span className="hidden sm:inline text-[#52504C]">
-                Cluster: ACC-V8-BLR
-              </span>
-              <span className="px-2 py-0.5 rounded text-[10px] bg-[#111111] text-white font-semibold">
-                LIVE NODE
+                Cluster: BLR | COK
               </span>
             </div>
           </div>
@@ -131,7 +126,7 @@ export default function Hero() {
                     </div>
                   </div>
                   <span className="px-2 py-0.5 rounded text-[10px] font-mono font-semibold bg-white/20 text-white border border-white/20">
-                    Verified Lead
+                    Developer
                   </span>
                 </div>
                 <div className="absolute top-0 left-0 z-50 pointer-events-none">
@@ -169,25 +164,22 @@ export default function Hero() {
             <div className="md:col-span-7 flex flex-col justify-between gap-6">
               <div className="space-y-3">
                 <span className="text-[11px] font-mono uppercase tracking-wider text-[#52504C] font-semibold">
-                  Flagship Architecture Telemetry
+                  FLAGSHIP MIGRATION PROJECT
                 </span>
                 <h3 className="text-2xl sm:text-3xl font-extrabold text-[#111111] tracking-tight">
-                  Engineered for zero downtime across millions of subscriber
-                  dispatches.
+                  Rebuilt the whole platform. Not one campaign missed a beat.
                 </h3>
                 <p className="text-xs sm:text-sm text-[#52504C] leading-relaxed">
-                  Proven track record executing end-to-end Adobe Campaign
-                  architecture migrations, custom schema indexing, JSSP server
-                  extensions, and GCP cloud data lakehouse ETL integrations.
+                  Delivered an end-to-end Adobe Campaign v7 to v8 migration: workflow rebuilds, custom schema design, JSSP campaign logic and GCP data integration, fully regression-tested.
                 </p>
               </div>
               <div className="grid grid-cols-3 gap-3 pt-3 border-t border-[#E2DDD5]">
                 <div className="p-3 bg-[#EFEAE1]/55 rounded-xl border border-[#E2DDD5]">
                   <div className="text-xl sm:text-3xl font-black text-[#111111] font-mono">
-                    15M+
+                    4+ YRS
                   </div>
                   <div className="text-[10px] font-mono text-[#52504C] uppercase tracking-wider mt-1">
-                    Dispatched / Mo
+                    MarTech Experience
                   </div>
                 </div>
                 <div className="p-3 bg-[#EFEAE1]/55 rounded-xl border border-[#E2DDD5]">
@@ -195,69 +187,20 @@ export default function Hero() {
                     v7 → v8
                   </div>
                   <div className="text-[10px] font-mono text-[#52504C] uppercase tracking-wider mt-1">
-                    0-Downtime Parity
+                    E2E MIGRATION
                   </div>
                 </div>
                 <div className="p-3 bg-[#EFEAE1]/55 rounded-xl border border-[#E2DDD5]">
                   <div className="text-xl sm:text-3xl font-black text-[#111111] font-mono">
-                    99.98%
+                    F50
                   </div>
                   <div className="text-[10px] font-mono text-[#52504C] uppercase tracking-wider mt-1">
-                    SLA Precision
+                    Cleints Served
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Supercharged Migration Parity */}
-      <section className="flex flex-col gap-8" id="supercharged-specs">
-        <div className="apple-blur-reveal flex flex-col md:flex-row md:items-end justify-between gap-4">
-          <div>
-            <span className="font-mono text-xs font-bold text-[#111111] uppercase tracking-wider">
-              // Apple Keynote Architecture Breakdown
-            </span>
-            <h2 className="text-2xl md:text-4xl font-extrabold text-[#111111] mt-1">
-              Supercharged Migration Parity
-            </h2>
-          </div>
-          <p className="text-sm text-[#52504C] max-w-md">
-            Side-by-side architectural evolution: translating Adobe Campaign
-            Classic legacy workflows into high-throughput cloud infrastructure.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {SPECS.map((spec) => (
-            <div
-              key={spec.kicker}
-              className="apple-blur-reveal tech-card p-6 rounded-2xl flex flex-col justify-between gap-4"
-            >
-              <div className="space-y-2">
-                <span className="text-[10px] font-mono uppercase font-bold text-[#52504C]">
-                  {spec.kicker}
-                </span>
-                <h4 className="text-base font-bold text-[#111111]">
-                  {spec.title}
-                </h4>
-                <div className="text-xs text-[#52504C] space-y-2 leading-relaxed">
-                  <div className="p-2.5 rounded-lg bg-[#EFEAE1]/60 border border-[#E2DDD5]">
-                    <div className="font-mono text-[10px] font-bold text-[#111111]">
-                      v7 CLASSIC
-                    </div>
-                    <p className="text-[11px] mt-0.5">{spec.classic}</p>
-                  </div>
-                  <div className="p-2.5 rounded-lg bg-white/80 border border-[#E2DDD5]">
-                    <div className="font-mono text-[10px] font-bold text-[#111111]">
-                      v8 CLOUD
-                    </div>
-                    <p className="text-[11px] mt-0.5">{spec.cloud}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          ))}
         </div>
       </section>
     </>

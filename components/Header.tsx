@@ -28,7 +28,7 @@ export default function Header() {
           </a>
           <div className="flex items-center gap-3 min-w-0">
             <span className="hidden md:inline text-xs font-mono text-[#52504C] truncate min-w-0">
-              Adobe Campaign Developer • Capgemini
+              MarTech Developer • Capgemini
             </span>
             <button
               aria-label="Toggle menu"

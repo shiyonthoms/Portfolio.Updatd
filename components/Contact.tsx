@@ -50,11 +50,6 @@ export default function Contact() {
           <h2 className="text-2xl md:text-3xl font-extrabold text-[#111111] mt-1">
             Get in Touch
           </h2>
-          <p className="text-sm text-[#52504C] max-w-xl mt-1">
-            Whether you are planning an Adobe Campaign v7 to v8 migration,
-            designing custom JSSP dynamic modules, or seeking an enterprise
-            MarTech specialist.
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start">
@@ -158,7 +153,7 @@ export default function Contact() {
                     className="font-mono text-xs text-[#111111] font-semibold uppercase"
                     htmlFor="contact-email"
                   >
-                    Work Email Address *
+                    Email Address *
                   </label>
                   <input
                     className="w-full px-3.5 py-2 rounded-xl bg-white/80 border border-[#E2DDD5] text-[#111111] placeholder:text-[#52504C]/60 focus:outline-none focus:border-[#111111] focus:ring-1 focus:ring-[#111111] text-sm transition-all"
@@ -169,7 +164,7 @@ export default function Contact() {
                   />
                 </div>
               </div>
-              <div className="flex flex-col gap-1.5">
+              {/* <div className="flex flex-col gap-1.5">
                 <label
                   className="font-mono text-xs text-[#111111] font-semibold uppercase"
                   htmlFor="scope-type"
@@ -196,7 +191,7 @@ export default function Contact() {
                     Technical Advisory / General Consultation
                   </option>
                 </select>
-              </div>
+              </div> */}
               <div className="flex flex-col gap-1.5">
                 <label
                   className="font-mono text-xs text-[#111111] font-semibold uppercase"
