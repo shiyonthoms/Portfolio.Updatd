@@ -11,6 +11,7 @@ import Experience from "./Experience";
 import Contact from "./Contact";
 import Footer from "./Footer";
 import LightbulbWidget from "./LightbulbWidget";
+import ChatbotWidget from "./ChatbotWidget";
 
 export default function PortfolioPage() {
   useEffect(() => {
@@ -60,6 +61,7 @@ export default function PortfolioPage() {
 
       <Footer />
       <LightbulbWidget />
+      <ChatbotWidget />
     </>
   );
 }

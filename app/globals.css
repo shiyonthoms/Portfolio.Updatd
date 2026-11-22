@@ -204,3 +204,82 @@ html.dark-mode #bulb-filament span {
 html.dark-mode #bulb-glow-halo {
   opacity: 0 !important;
 }
+
+/* ============================================================
+   AI Chatbot Companion (3D Cute Sphere Ball)
+   ============================================================ */
+@keyframes floatSphere {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-6px) rotate(1.5deg);
+  }
+}
+@keyframes shadowPuff {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.32;
+  }
+  50% {
+    transform: scale(0.85);
+    opacity: 0.18;
+  }
+}
+@keyframes blinkEyes {
+  0%,
+  94%,
+  98%,
+  100% {
+    transform: scaleY(1);
+  }
+  96% {
+    transform: scaleY(0.08);
+  }
+}
+@keyframes popWiggle {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.12) rotate(-5deg);
+  }
+  60% {
+    transform: scale(1.12) rotate(5deg);
+  }
+  100% {
+    transform: scale(1.08) rotate(0deg);
+  }
+}
+.floating-ball {
+  animation: floatSphere 3.6s ease-in-out infinite;
+}
+.floating-shadow {
+  animation: shadowPuff 3.6s ease-in-out infinite;
+}
+.eye-blink-wrapper {
+  animation: blinkEyes 5s infinite;
+  transform-origin: center center;
+}
+.chat-ball-btn:hover .floating-ball {
+  animation: popWiggle 0.45s ease forwards;
+}
+.chat-popup-window {
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+    transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.3s;
+  transform-origin: bottom right;
+}
+.chat-popup-window.popup-closed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(0.85) translateY(24px);
+}
+.chat-popup-window.popup-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: scale(1) translateY(0);
+}

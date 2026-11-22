@@ -102,6 +102,7 @@ export default function LightbulbWidget() {
       cord.classList.add("is-pulling");
       setTimeout(() => {
         document.documentElement.classList.toggle("dark-mode");
+        document.documentElement.classList.toggle("dark");
         document.body.classList.toggle("dark-mode");
       }, 150);
       setTimeout(() => {
