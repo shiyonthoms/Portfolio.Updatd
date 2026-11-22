@@ -51,7 +51,7 @@ export default function PortfolioPage() {
 
       <main className="w-full max-w-7xl mx-auto px-4 md:px-8 pt-28 pb-16 flex flex-col gap-20">
         <Hero />
-        <PipelineSimulator />
+        {/* <PipelineSimulator /> */}
         <Architecture />
         <Blueprints />
         <Skills />
