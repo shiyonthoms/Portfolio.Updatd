@@ -6,8 +6,7 @@ import {
   InstagramIcon,
 } from "./icons";
 
-const PROFILE_IMAGE =
-  "https://lh3.googleusercontent.com/aida-public/AB6AXuBXJinC0TYHmsovGhSJfwek2CvV81WPkF41VhFWrWjKqeWRPe_1oOUgrwK7QfIdmOiwmr9h5IEVUR93aFfQoCWiX2TZM_W9SohUZRJ8_6rL691gCDlZzBU3TGNG0Cd_xKjlHi6QB0LlLJvQjpJx0ou2Og1xgnxroXlB_r37nmOuEOSZOu-MTXbLiQ3wktKgmziadgPfxIaR63gkXi7c2jOq1cpYRMki8SUO2QYvC3rx7Wui2tNxR4Wj";
+const PROFILE_IMAGE = "/profile.jpg";
 
 const SPECS = [
   {
