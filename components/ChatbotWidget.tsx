@@ -358,7 +358,7 @@ export default function ChatbotWidget() {
           {/* Speech bubble */}
           <div className="absolute -top-9 right-1/2 translate-x-1/2 px-2.5 py-1 rounded-xl bg-[#111111] dark:bg-white text-white dark:text-black text-[10px] font-mono font-semibold tracking-tight opacity-0 group-hover:opacity-100 group-hover:-translate-y-1 transition-all duration-300 pointer-events-none whitespace-nowrap shadow-xl border border-white/20 dark:border-black/20 flex items-center gap-1.5 z-50">
             <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-ping"></span>
-            <span>Ask me anything! ✨</span>
+            <span>Need help?</span>
             <div className="absolute -bottom-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-[#111111] dark:bg-white rotate-45 border-b border-r border-white/20 dark:border-black/20"></div>
           </div>
 
